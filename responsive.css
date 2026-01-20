@@ -1,0 +1,61 @@
+@media (max-width: 1024px) {
+  .sidebar {
+    display: none;
+  }
+  
+  .container {
+    padding-right: 20px;
+  }
+  
+  .dashboard {
+    display: flex;
+    flex-direction: column;
+    margin-right: 0;
+    gap: 20px;
+  }
+  
+  .balance,
+  .income,
+  .costs,
+  .activities,
+  .bills,
+  .ourtable,
+  .budget,
+  .versus,
+  .summarize,
+  .visacards {
+    width: 100%;
+  }
+  
+  .ourtable {
+    width: 100%;
+    overflow-x: auto;
+  }
+  
+  table {
+    min-width: 800px;
+  }
+}
+
+@media (max-width: 768px) {
+  .header {
+    flex-direction: column;
+    gap: 15px;
+    align-items: stretch;
+  }
+  
+  .leftside {
+    order: 1;
+  }
+  
+  .header > span {
+    margin: 0;
+    order: 2;
+  }
+  
+  .rightside {
+    order: 3;
+    justify-content: space-between;
+    width: 100%;
+  }
+}
